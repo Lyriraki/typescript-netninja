@@ -15,6 +15,8 @@ let mixed = ['Lucky', 22, "Arif", true]
 mixed.push(false)
 mixed.push(31)
 mixed.push("Arif")
+let arr: string[] = []; //!Must be initialize
+arr.push('Lucky')
 
 //* Object
 let ninja = {
@@ -30,3 +32,14 @@ let ninja = {
 //     age: 30,
 //     skills : ['Fighting', 'Genjutsu']
 // } //! must be always same with the first declaration
+
+//* Union Type
+let union: any[] = []
+//! or let union: (string|number|boolean)[] = []
+union.push('hello')
+union.push(12)
+union.push(false)
+console.log('This is Union: ',union);
+
+
+

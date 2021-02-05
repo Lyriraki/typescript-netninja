@@ -12,6 +12,8 @@ var mixed = ['Lucky', 22, "Arif", true];
 mixed.push(false);
 mixed.push(31);
 mixed.push("Arif");
+var arr = []; //!Must be initialize
+arr.push('Lucky');
 //* Object
 var ninja = {
     name: 'Mario',
@@ -26,3 +28,10 @@ var ninja = {
 //     age: 30,
 //     skills : ['Fighting', 'Genjutsu']
 // } //! must be always same with the first declaration
+//* Union Type
+var union = [];
+//! or let union: (string|number|boolean)[] = []
+union.push('hello');
+union.push(12);
+union.push(false);
+console.log('This is Union: ', union);
