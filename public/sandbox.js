@@ -1,3 +1,4 @@
+"use strict";
 var circ = function (diameter) {
     return diameter * Math.PI;
 };
@@ -35,3 +36,20 @@ union.push('hello');
 union.push(12);
 union.push(false);
 console.log('This is Union: ', union);
+// Functions Basic
+var add = function (a, b, c, d) {
+    if (c === void 0) { c = 10; }
+    console.log(a + b);
+    console.log("this can rewrite " + c);
+    console.log("this is optional " + d);
+};
+add(5, 5, 5);
+var withAlias1 = function (uid, item) {
+    console.log(item + " bla bla bla " + uid);
+};
+var NoAlias2 = function (user) {
+    console.log(user.name + " says helo");
+};
+var withAlias2 = function (user) {
+    console.log(user.name + " says helo");
+};

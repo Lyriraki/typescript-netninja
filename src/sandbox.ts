@@ -41,5 +41,30 @@ union.push(12)
 union.push(false)
 console.log('This is Union: ',union);
 
+// Functions Basic
+const add = (a: number, b: number, c: number | string = 10, d?: number | string) => {
+    console.log(a+b);
+    console.log(`this can rewrite ${c}`);
+    console.log(`this is optional ${d}`);
+}
+
+add(5,5,5)
+
+// Making Alias
+type StringOrNum = string | number;
+type ObjWithName = { name: string, uid: string | number}
+
+const withAlias1 = (uid: StringOrNum, item: string) => {
+    console.log(`${item} bla bla bla ${uid}`);
+}
+
+const NoAlias2 = (user: { name: string, uid: string | number}) => {
+    console.log(`${user.name} says helo`);
+}
+
+const withAlias2 = (user: ObjWithName) => {
+    console.log(`${user.name} says helo`);
+}
+
 
 
